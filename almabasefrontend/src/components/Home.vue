@@ -28,20 +28,21 @@
         </div>
         <div class="row">
             <paginate name="gamelist" :list="gamelist" :per="12" tag="div">
-                <div  class="col-md-4 col-sm-2 col-xs-12" v-for="game in paginated('gamelist')">
+                <div  class="col-md-4 col-sm-6 col-xs-12" v-for="game in paginated('gamelist')">
                 <div  class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">{{game.title}}<span v-if="game.editors_choice=='Y'" class="badge pull-right">Editor's Pick</span></h3>
                     </div>
                     <div class="panel-body">
-                        Genre: {{game.genre}}
                         <br> Platform: {{game.platform}}
-                        <br> Score: {{game.score}}
                     </div>
+                    <div class="panel-footer">
+                        Genre: {{game.genre}}<span class="badge pull-right">{{game.score}}</span>
                     </div>
                 </div>
+                </div>
             </paginate>
-            <paginate-links for="gamelist" class="pagination pagination-sm pull-right" :limit="10"></paginate-links>
+            <paginate-links for="gamelist" class="pagination pagination-sm pull-right text-center" :limit="10"></paginate-links>
         </div>
     </div>
 </template>
@@ -148,7 +149,5 @@ export default {
 }
 </script>
 <style scoped>
-.panel-primary {
-    height: 200px;
-}
+
 </style>
