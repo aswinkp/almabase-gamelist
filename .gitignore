@@ -1,0 +1,4 @@
+almabase/db.sqlite3
+almabase/.idea
+almabasefrontend/node_modules
+*.pyc
