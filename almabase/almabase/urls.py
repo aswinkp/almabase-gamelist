@@ -25,8 +25,7 @@ from gamelist.views import *
 router = DefaultRouter()
 # router.register(r'account',AccountViewSet)
 router.register(r'gamelist',Table8ViewSet)
-
-
+router.register(r'users', UserView, 'list')
 
 
 urlpatterns = [

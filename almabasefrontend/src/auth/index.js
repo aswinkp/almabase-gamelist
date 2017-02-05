@@ -8,7 +8,12 @@ export default {
     SITE_URL: "http://localhost:8000/",
   },
   user: {
-    authenticated: false
+    authenticated: function(){
+      if(getAuthHeader()){
+        return true
+      }
+      return false;
+    }
   },
 
   login(context, creds, redirect) {
@@ -28,7 +33,7 @@ export default {
 
   signup(context, creds, redirect) {
     var self=this;
-    axios.post(this.urls.SITE_URL+ 'signup', creds).then(function (response) {
+    axios.post(this.urls.SITE_URL+ 'api/v1/users/', creds).then(function (response) {
       if(redirect) {
           context.$router.push(redirect)        
       }

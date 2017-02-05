@@ -1,6 +1,6 @@
 <template>
   <div class="col-sm-4 col-sm-offset-4">
-    <div class="panel panel-success">
+    <div class="panel panel-primary">
       <div class="panel-heading">
         <h3 class="panel-title">Log In</h3>
       </div>
