@@ -5,7 +5,7 @@ import axios from 'axios'
 
 export default {
   urls: {
-    SITE_URL: "http://localhost:8000/",
+    SITE_URL: "http://67.205.174.232:5000/",
   },
   user: {
     authenticated: function(){
