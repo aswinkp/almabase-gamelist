@@ -1,4 +1,4 @@
-# Almabase Hiring Challenge
+# Almabase Challenge
 
 ## Instructions To Run
 
@@ -27,13 +27,3 @@
 + `npm install`
 
 + `npm run dev`
-
-## Candidate Details
-
-+ Aswin Kumar KP
-+ kp.aswinkumar@gmail.com
-+ +91 852 652 0700
-+ skype: aswinkumarkp
-+ *StackOverflow CV:* http://stackoverflow.com/cv/aswinkumar
-+ *LinkedIn:* https://in.linkedin.com/in/aswin-kumar-kp
-+ *Github:* https://github.com/aswinkp
